@@ -1,0 +1,2 @@
+// Create a program that prints all even numbers between 0 and 500 (both included)
+// Each number should be on a new line

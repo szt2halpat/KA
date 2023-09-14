@@ -1,0 +1,25 @@
+//Please enter an integer as variable "a"
+// if the value of 'a' is even increment output1 by one
+
+//Please enter an integer between 0 and 30 as variable b
+// if b is between 10 and 20 set output2 to "Sweet!"
+// if less than 10 set output2 to "Less!",
+// if more than 20 set output2 to "More!"
+
+//Please enter an integer between 0 and 100 as variable credits
+//Please enter a boolean (true/false) as variable isBonus
+// if credits are at least 50,
+// and isBonus is false decrement output3 by 2
+// if credits are smaller than 50,
+// and isBonus is false decrement output3 by 1
+// if isBonus is true output3 should remain the same
+
+//Please enter an integer between 0 and 50 as variable d
+//Please enter an integer between 0 and 500 as variable time
+// if d is dividable by 4 and time is not more than 200
+// set output4 to "Check"
+// if time is more than 200
+// set output4 to "Time out"
+// otherwise set output4 to "Run Forest Run!"
+
+
