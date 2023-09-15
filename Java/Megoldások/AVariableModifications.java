@@ -1,7 +1,4 @@
-package Megoldások;
-
-import java.util.ArrayList;
-import java.util.List;
+package Java.Megoldások;
 
 public class AVariableModifications {
     public static void main(String[] args) {
