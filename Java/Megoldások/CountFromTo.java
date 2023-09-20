@@ -16,7 +16,7 @@ public class CountFromTo {
         if (szam1 > szam2) {
             System.out.println("The second number should be bigger");
         } else {
-            for (int i = szam1; i < szam2; i++) {
+            for (int i = szam1; i <= szam2; i++) {
                 System.out.println(i);
             }
         }
