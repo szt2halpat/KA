@@ -1,0 +1,22 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+}
+#elso {
+  background-color: green;
+  width: 100%;
+  flex: 1;
+}
+#masodik {
+  background-color: yellow;
+  width: 100%;
+  flex: 2;
+  order: 1;
+}
+#harmadik {
+  background-color: purple;
+  width: 100%;
+  flex: 1;
+}
