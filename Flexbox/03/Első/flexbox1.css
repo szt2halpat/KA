@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 20px;
+}
+
+.menu-item {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.citrom {
+    background-color: yellow;
+    flex: 2;
+    height: 100vh;
+}
+
+.zold {
+    background-color: green;
+    flex: 1;
+    height: 100vh;
+}

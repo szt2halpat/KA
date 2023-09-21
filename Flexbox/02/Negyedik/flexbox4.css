@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    list-style-type: none;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.box:last-child {
+    margin-right: 0;
+}
