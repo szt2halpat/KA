@@ -7,7 +7,7 @@ public class DrawDiamond {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the square size: ");
+        System.out.println("Please enter the diamond size: ");
 
         int size = scanner.nextInt();
 
