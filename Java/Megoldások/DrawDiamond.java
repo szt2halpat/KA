@@ -1,4 +1,3 @@
-package Java.Megoldások;
 
 import java.util.Scanner;
 
@@ -7,7 +6,7 @@ public class DrawDiamond {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the diamond size: ");
+        System.out.println("Please enter the square size: ");
 
         int size = scanner.nextInt();
 

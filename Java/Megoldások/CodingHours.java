@@ -1,4 +1,3 @@
-package Java.Megoldások;
 
 import java.util.Scanner;
 
