@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Órarend Módosítás</title>
+</head>
+<body>
+<div class="container">
+    <h1>Heti órarend</h1>
+    <table class="schedule">
+        <tr>
+            <th></th>
+            <th>Hétfő</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Csütörtök</th>
+            <th>Péntek</th>
+        </tr>
+        <tr>
+            <td>1. óra</td>
+            <td class="editable" data-hour="1" data-day="Hétfő"></td>
+            <td class="editable" data-hour="1" data-day="Kedd"></td>
+            <td class="editable" data-hour="1" data-day="Szerda"></td>
+            <td class="editable" data-hour="1" data-day="Csütörtök"></td>
+            <td class="editable" data-hour="1" data-day="Péntek"></td>
+        </tr>
+        <tr>
+            <td>2. óra</td>
+            <td class="editable" data-hour="2" data-day="Hétfő"></td>
+            <td class="editable" data-hour="2" data-day="Kedd"></td>
+            <td class="editable" data-hour="2" data-day="Szerda"></td>
+            <td class="editable" data-hour="2" data-day="Csütörtök"></td>
+            <td class="editable" data-hour="2" data-day="Péntek"></td>
+        </tr>
+        <tr>
+            <td>3. óra</td>
+            <td class="editable" data-hour="3" data-day="Hétfő"></td>
+            <td class="editable" data-hour="3" data-day="Kedd"></td>
+            <td class="editable" data-hour="3" data-day="Szerda"></td>
+            <td class="editable" data-hour="3" data-day="Csütörtök"></td>
+            <td class="editable" data-hour="3" data-day="Péntek"></td>
+        </tr>
+        <!-- További órák sorai -->
+    </table>
+
+    <h2>Órarend módosítása</h2>
+    <form id="scheduleForm">
+        <label for="hour">Óra:</label>
+        <input type="number" id="hour" min="1" required>
+        <label for="day">Nap:</label>
+        <select id="day" required>
+            <option value="Hétfő">Hétfő</option>
+            <option value="Kedd">Kedd</option>
+            <option value="Szerda">Szerda</option>
+            <option value="Csütörtök">Csütörtök</option>
+            <option value="Péntek">Péntek</option>
+        </select>
+        <label for="subject">Tantárgy:</label>
+        <input type="text" id="subject" required>
+        <button type="button" id="modifyButton">Módosítás</button>
+    </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
