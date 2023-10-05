@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Üres Órarend</title>
+</head>
+<body>
+<div class="container">
+    <h1>Heti órarend</h1>
+    <div class="schedule">
+        <div class="row header">
+            <div></div>
+            <div>Hétfő</div>
+            <div>Kedd</div>
+            <div>Szerda</div>
+            <div>Csütörtök</div>
+            <div>Péntek</div>
+        </div>
+        <div class="row elso">
+            <div>0. óra<br>7:15 - 7:55</div>
+            <div class="editable" data-hour="0" data-day="Hétfő"></div>
+            <div class="editable" data-hour="0" data-day="Kedd"></div>
+            <div class="editable" data-hour="0" data-day="Szerda"></div>
+            <div class="editable" data-hour="0" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="0" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>1. óra<br>8:00 - 8:45</div>
+            <div class="editable" data-hour="1" data-day="Hétfő"></div>
+            <div class="editable" data-hour="1" data-day="Kedd"></div>
+            <div class="editable" data-hour="1" data-day="Szerda"></div>
+            <div class="editable" data-hour="1" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="1" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>2. óra<br>8:55 - 9:40</div>
+            <div class="editable" data-hour="2" data-day="Hétfő"></div>
+            <div class="editable" data-hour="2" data-day="Kedd"></div>
+            <div class="editable" data-hour="2" data-day="Szerda"></div>
+            <div class="editable" data-hour="2" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="2" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>3. óra<br>9:55 - 10:40</div>
+            <div class="editable" data-hour="3" data-day="Hétfő"></div>
+            <div class="editable" data-hour="3" data-day="Kedd"></div>
+            <div class="editable" data-hour="3" data-day="Szerda"></div>
+            <div class="editable" data-hour="3" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="3" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>4. óra<br>10:50 - 11:35</div>
+            <div class="editable" data-hour="4" data-day="Hétfő"></div>
+            <div class="editable" data-hour="4" data-day="Kedd"></div>
+            <div class="editable" data-hour="4" data-day="Szerda"></div>
+            <div class="editable" data-hour="4" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="4" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>5. óra<br>11:45 - 12:30</div>
+            <div class="editable" data-hour="5" data-day="Hétfő"></div>
+            <div class="editable" data-hour="5" data-day="Kedd"></div>
+            <div class="editable" data-hour="5" data-day="Szerda"></div>
+            <div class="editable" data-hour="5" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="5" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>6. óra<br>12:45 - 13:30</div>
+            <div class="editable" data-hour="6" data-day="Hétfő"></div>
+            <div class="editable" data-hour="6" data-day="Kedd"></div>
+            <div class="editable" data-hour="6" data-day="Szerda"></div>
+            <div class="editable" data-hour="6" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="6" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>7. óra<br>13:40 - 14:25</div>
+            <div class="editable" data-hour="7" data-day="Hétfő"></div>
+            <div class="editable" data-hour="7" data-day="Kedd"></div>
+            <div class="editable" data-hour="7" data-day="Szerda"></div>
+            <div class="editable" data-hour="7" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="7" data-day="Péntek"></div>
+        </div>
+        <div class="row elso">
+            <div>8. óra<br>14:30 - 15:15</div>
+            <div class="editable" data-hour="8" data-day="Hétfő"></div>
+            <div class="editable" data-hour="8" data-day="Kedd"></div>
+            <div class="editable" data-hour="8" data-day="Szerda"></div>
+            <div class="editable" data-hour="8" data-day="Csütörtök"></div>
+            <div class="editable" data-hour="8" data-day="Péntek"></div>
+        </div>
+    </div>
+</div>
+<div class="modositas">
+    <h2>Órarend módosítása</h2>
+        <label for="hour">Óra:</label>
+        <input type="number" id="hour" min="0" max="8" required>
+        <label for="day">Nap:</label>
+        <select id="day" required>
+            <option value="Hétfő">Hétfő</option>
+            <option value="Kedd">Kedd</option>
+            <option value="Szerda">Szerda</option>
+            <option value="Csütörtök">Csütörtök</option>
+            <option value="Péntek">Péntek</option>
+        </select>
+        <label for="subject">Tantárgy:</label>
+        <input type="text" id="subject" required>
+        <button type="button" id="modifyButton">Módosítás</button>
+    <button id="mode-toggle">Light / Dark mód</button>
+</div>
+<script src="index.js"></script>
+<script src="Szinvaltas.js"></script>
+</body>
+</html>
