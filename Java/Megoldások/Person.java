@@ -1,3 +1,4 @@
+package Java.Megoldások;
 
 public class Person {
     private String firstName;
