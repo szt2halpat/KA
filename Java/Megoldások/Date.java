@@ -1,4 +1,4 @@
-package Java.Megoldások;
+import java.text.DateFormat;
 
 public class Date {
     private int year;
@@ -13,9 +13,16 @@ public class Date {
 
     public boolean isCorrectDate() {
         if (month < 1 || month > 12) {
+            month = 1;
             return false;
         }
         if (day < 1) {
+            day = 1;
+            return false;
+        }
+        if(month == 2 && day == 30 || day == 31)
+        {
+            day = 29;
             return false;
         }
         if (month == 2) {
@@ -62,6 +69,19 @@ public class Date {
 
     private boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    }
+
+    public static void main(String[] args) {
+
+        Date date = new Date(2023, 02, 29);
+        date.isCorrectDate();
+        date.printDate();
+
+        System.out.println("---------------");
+
+        Date date2 = new Date(2023,10, 1);
+        date2.printDate();
+
     }
 }
 

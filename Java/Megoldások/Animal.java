@@ -1,5 +1,3 @@
-package Java.Megoldások;
-
 public class Animal {
     private int numberOfLegs;
     private int numberOfEyes;
@@ -43,9 +41,14 @@ public class Animal {
     }
 
     public static void main(String[]args){
-        //Person person = new Person("John", "Doe", 1990, 5, 15);
-        //person.printPerson();
 
+        Animal animal = new Animal(4,2,"Tigriske");
+        animal.printAnimal();
+
+        System.out.println("---------------");
+
+        Animal animal2 = new Animal(2, 4, "Valami");
+        animal2.printAnimal();
     }
 
 }

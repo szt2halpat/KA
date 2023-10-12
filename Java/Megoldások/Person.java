@@ -1,4 +1,3 @@
-package Java.Megoldások;
 
 public class Person {
     private String firstName;
@@ -14,6 +13,13 @@ public class Person {
         this.birthMonth = birthMonth;
         this.birthDay = birthDay;
     }
+
+    public Person(String firstName, String lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
 
     public void printPerson() {
         System.out.println("Vezetéknév: " + lastName);
@@ -60,6 +66,15 @@ public class Person {
 
     public void setBirthDay(int birthDay) {
         this.birthDay = birthDay;
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person("John", "Doe");
+        person.printPerson();
+
+        Person person1 = new Person("Aasd", "Nyalogasd",2002,03,20);
+        person1.printPerson();
+
     }
 }
 
