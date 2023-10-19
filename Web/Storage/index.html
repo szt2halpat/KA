@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storage Példa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #data-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Storage Példa</h1>
+<label for="storage-select">Válassz tárolót:</label>
+<select id="storage-select">
+    <option value="local">Local Storage</option>
+    <option value="session">Session Storage</option>
+</select>
+<br><br>
+<label for="key-input">Key:</label>
+<input type="text" id="key-input">
+<br><br>
+<label for="value-input">Value:</label>
+<input type="text" id="value-input">
+<br><br>
+<button onclick="saveData()">Mentés</button>
+<button onclick="clearStorage('local')">Local Storage Törlés</button>
+<button onclick="clearStorage('session')">Session Storage Törlés</button>
+<div id="data-container">
+    <h2>Mentett adatok:</h2>
+    <div id="stored-data"></div>
+</div>
+
+<script>
+    // Ellenőrizzük, hogy melyik tárolót választották ki
+    function getSelectedStorage() {
+        const storageSelect = document.getElementById('storage-select');
+        return storageSelect.value;
+    }
+
+    // Adatok mentése a kiválasztott tárolóba
+    function saveData() {
+        const storageType = getSelectedStorage();
+        const key = document.getElementById('key-input').value;
+        const value = document.getElementById('value-input').value;
+
+        if (key && value) {
+            if (storageType === 'local') {
+                localStorage.setItem(key, value);
+            } else {
+                sessionStorage.setItem(key, value);
+            }
+        }
+        displayStoredData();
+    }
+
+    // Tárolt adatok megjelenítése
+    function displayStoredData() {
+        const storageType = getSelectedStorage();
+        const dataContainer = document.getElementById('stored-data');
+        dataContainer.innerHTML = '';
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            const value = localStorage.getItem(key);
+
+            if (storageType === 'local') {
+                dataContainer.innerHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+            }
+        }
+
+        if (dataContainer.innerHTML === '') {
+            dataContainer.innerHTML = 'Adat nem érhető el';
+        }
+    }
+
+    // Tároló tartalmának törlése
+    function clearStorage(storageType) {
+        if (storageType === 'local') {
+            localStorage.clear();
+        } else {
+            sessionStorage.clear();
+        }
+        displayStoredData();
+    }
+
+    // Oldal betöltésekor a tárolt adatok megjelenítése
+    displayStoredData();
+</script>
+</body>
+</html>
