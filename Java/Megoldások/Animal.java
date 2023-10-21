@@ -1,3 +1,5 @@
+package Java.Megoldások;
+
 public class Animal {
     private int numberOfLegs;
     private int numberOfEyes;
