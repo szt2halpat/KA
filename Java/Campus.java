@@ -199,9 +199,6 @@ public class Campus {
         sponsor2.getGoal();
         awesomeCohort.addSponsor(sponsor2);
 
-
-        System.out.println("--------------");
-
         awesomeCohort.info();
 
 
