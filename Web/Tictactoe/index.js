@@ -60,7 +60,6 @@ function Gyoztes()
         const feltetel = eselyek[i] //Minden egy iterációban lekér egy győzelmi kombinációt
         console.log(feltetel)
         console.log(feltetel.length)
-
         //Ezt a győzelmi kombinációt bontja három elemre
         const cella1 = opciok[feltetel[0]]
         const cella2 = opciok[feltetel[1]]
