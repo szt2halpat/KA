@@ -32,7 +32,7 @@ function Kezdes()
 }
 
 function cellclick() {
-    const cellIndex = this.getAttribute("cellIndex");  // "this" has to be used instead of "cellak"
+    const cellIndex = this.getAttribute("cellIndex");
     if (opciok[cellIndex] !== "" || !futas) {
         return;
     }
