@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 20px;
+  font-family: "SF Pro";
+  scroll-behavior: smooth;
+}
+:root {
+  --nav-color: rgba(255, 255, 255, 0.6);
+  --bg-nav: rgba(22, 22, 23, 0.8);
+  --fs-small: 0.85em;
+  --fs-small-rem: 2rem;
+
+  /*Font colors*/
+  --fc-first: #062925;
+  --fc-second: #044a42;
+  --fc-third: #3a9188;
+  --fc-fourth: #b8e1dd;
+
+  /*Background colors*/
+  --bg-main: #062925;
+}
+
+/*HEADER ELEMENT*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 20px 5%;
+  background-color: var(--bg-main);
+}
+
+/*NAV*/
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 0 0 2em;
+  /*top right bottom left*/
+}
+
+.nav-links li a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: var(--fc-third);
+}
+
+.nav-links li a:hover {
+  color: var(--fc-fourth);
+}
+
+/*NÉV - LOGO*/
+.nev {
+  font-variant: small-caps;
+  font-weight: normal;
+  color: var(--fc-third);
+}
+
+.nev:first-letter {
+  font-weight: bold;
+}
+.bold-letter {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: var(--fc-fourth);
+}
+
+/*BEMUTATKOZÁS*/
+
+.landingPage {
+  /* A maradék teret számoljuk ki a viewport magasságából a menü és térköz alapján */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/*BAL KONTENT*/
+
+.bal {
+  width: 100%;
+  padding: 0 5% 0 5%;
+  margin: 0;
+  /*height: calc(100vh - 70px);*/
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: var(--fc-first);
+  color: var(--fc-fourth);
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  height: 65vh;
+  width: 2px;
+  background-color: red;
+}
+
+.content > .cim {
+  font-size: 3em;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > p {
+  /*text-shadow: 17px 28px 4px rgba(0,0,0,0.86);*/
+}
+
+.content > a {
+  display: inline-block;
+  margin: 0.5em 0.5em 0 0;
+  text-align: center;
+  color: var(--fc-fourth);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.content > a:hover {
+  color: var(--fc-third);
+}
+
+/*JOBB KONTENT*/
+.jobb {
+  width: 100%;
+  background-color: var(--fc-first);
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobb > .kep {
+  width: 30vw;
+  height: 50vh;
+}
